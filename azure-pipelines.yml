@@ -13,7 +13,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'dotnet build  **/*.eShopOnWeb.sln'
+    script: 'dotnet build  **/.eShopOnWeb.sln'
 - task: dependency-check-build-task@6
   inputs:
     projectName: 'eShopOnWeb'
